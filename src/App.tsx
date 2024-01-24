@@ -10,7 +10,7 @@ function App() {
   // const handleSelectItem = (item: string) =>{
   // console.log(item);
   // }
-
+  
   return (
     <>
       <div>
@@ -28,7 +28,9 @@ function App() {
         Hello <span>World!!!</span>
       </Alert>
 
-      <Buttons text="Dark" />
+      <Buttons color="success" onClick={()=>console.log("CLICKED")}>
+        Dark
+      </Buttons>
     </>
   );
 }

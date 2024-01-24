@@ -1,16 +1,14 @@
 interface Props {
-  text: string;
+  children: string;
+  color: string;
+  onClick: () => void;
 }
 
-const Buttons = ({ text }: Props) => {
-
-    const handleClick = () => {
-        console.log(``)
-    }
+const Buttons = ({ children,color,onClick }: Props) => {
 
   return (
     <div className="d-flex justify-content-center">
-      <button className="btn btn-dark" onClick={()=>console.log("Clicked")}>{text}</button>
+      <button className= {"btn btn-"+color} onClick={onClick}>{children}</button>
     </div>
   );
 };
