@@ -1,13 +1,14 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import ListGroup from './components/ListGroup'
+import reactLogo from "./assets/react.svg";
+import viteLogo from "/vite.svg";
+import "./App.css";
+// import ListGroup from './components/ListGroup'
+import Alert from "./components/Alert";
 
 function App() {
-  const items = ["New York", "San Fransisco", "Denver", "Berlin", "New Delhi"]; 
-  const handleSelectItem = (item: string) =>{
-    console.log(item);
-  }
+  // const items = ["New York", "San Fransisco", "Denver", "Berlin", "New Delhi"];
+  // const handleSelectItem = (item: string) =>{
+  // console.log(item);
+  // }
 
   return (
     <>
@@ -20,9 +21,13 @@ function App() {
         </a>
       </div>
       <h1>Vite + React</h1>
-      <ListGroup items={items} heading={"Cities"} onSelectedItem={handleSelectItem}/>
+      {/* <ListGroup items={items} heading={"Cities"} onSelectedItem={handleSelectItem}/> */}
+
+      <Alert>
+        Hello <span>World!!!</span>
+      </Alert>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
