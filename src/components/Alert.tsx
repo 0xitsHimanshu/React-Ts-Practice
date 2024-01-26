@@ -8,7 +8,7 @@ interface Props {
 
 const Alert = ({ children, text, onClick }: Props) => {
   return (
-    <div className="alert alert- alert-dismissible fade show">
+    <div className="alert alert-danger alert-dismissible fade show" role="alert">
       <strong> {children} </strong> {text}
       <button
         className="btn-close"
